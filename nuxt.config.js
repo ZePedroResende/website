@@ -28,7 +28,14 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/fontawesome',
   ],
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      brands: ['faGithub'],
+    },
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [

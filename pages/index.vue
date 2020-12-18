@@ -1,12 +1,30 @@
 <template>
-<body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Section</h1>
-      <h2 class="subtitle">A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading</h2>
-    </div>
-  </section>
-</body>
+  <div>
+    <body>
+      <Navbar />
+      <section id="wrapper" class="section" style="padding-top: 0">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-8">
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <p class="subtitle" style="padding-top: 0">
+                  My name is Ze Pedro Resende, I'm a Software Engineer at
+                  <a href="https://finiam.com">Finiam</a>. <br />
+                </p>
+                <p class="content">
+                  I'm interested in Audio, Distributed Systems, Data Exploration
+                  and Visualization, High Performance Computing.<br />
+                  Right now i'm mostly programming in Ruby, Elixir, Rust and
+                  Typescript.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </body>
+  </div>
 </template>
 
 <script lang="ts">
@@ -16,4 +34,13 @@ export default Vue.extend({})
 </script>
 
 <style>
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#wrapper {
+  flex: 1;
+}
 </style>
