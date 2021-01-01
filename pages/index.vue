@@ -1,30 +1,35 @@
 <template>
-  <div>
-    <body>
-      <Navbar />
-      <section id="wrapper" class="section" style="padding-top: 0">
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-8">
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <p class="subtitle" style="padding-top: 0">
-                  My name is Ze Pedro Resende, I'm a Software Engineer at
-                  <a href="https://finiam.com">Finiam</a>. <br />
-                </p>
-                <p class="content">
-                  I'm interested in Audio, Distributed Systems, Data Exploration
-                  and Visualization, High Performance Computing.<br />
-                  Right now i'm mostly programming in Ruby, Elixir, Rust and
-                  Typescript.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Footer />
-    </body>
-  </div>
+  <section class="section is-flex is-flex-direction-column">
+    <div class="container">
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <p class="subtitle has-text-centered">
+            I'm a Software Engineer at
+            <a href="https://finiam.com">Finiam</a>. <br />
+          </p>
+          <p class="content">
+            I'm interested in Audio, Distributed Systems, Data Exploration, High
+            Performance Computing.<br />
+          </p>
+
+          <p class="content">
+            I have a BSC in Software Engineering from Universidade do Minho and
+            i'm currently finishing my MSC in distributed systems and parallel
+            computing.
+          </p>
+          <p class="content">
+            Right now i'm mostly programming in Ruby, Elixir, Rust and
+            Typescript.<br />
+          </p>
+
+          <p class="content">
+            As a hobby i build effect pedals for guitar and bass and some
+            personal custom guitars.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -34,13 +39,8 @@ export default Vue.extend({})
 </script>
 
 <style>
-.body {
-  height: 100%;
-}
-
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+section a {
+  background: black;
+  color: white;
 }
 </style>

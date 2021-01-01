@@ -1,13 +1,14 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <NuxtLink class="navbar-item" to="/">
-        <h1 class="navbar-item title">ZePedroResende</h1>
-      </NuxtLink>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start"></div>
-    </div>
+  <nav class="level" role="navigation" aria-label="main navigation">
+    <NuxtLink class="level-item has-text-centered" to="/">
+      <h1 class="navbar-item title">ZePedroResende</h1>
+    </NuxtLink>
   </nav>
 </template>
+
+<style>
+h1 {
+  background: black;
+  color: white !important;
+}
+</style>
